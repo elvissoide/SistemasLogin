@@ -7,7 +7,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Arrays;
 
-public class converter  extends JFrame {
+public class shoesConverter  extends JFrame {
 
     private JPanel panel1;
 
@@ -22,7 +22,7 @@ public class converter  extends JFrame {
     private JTextArea txtAreaMensaje;
     private JLabel JMarca;
 
-    public converter(){
+    public shoesConverter(){
 
         setContentPane(panel1);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -86,7 +86,7 @@ public class converter  extends JFrame {
 
 
     public static void main(String[] args) {
-        JFrame frame = new converter();
+        JFrame frame = new shoesConverter();
         frame.setSize(500,400);
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);
