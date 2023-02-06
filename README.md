@@ -8,6 +8,9 @@ JLabel para los títulos como:
 ![image](https://user-images.githubusercontent.com/117754219/216979737-bc5c0557-cbb5-4adf-a25b-2b86418b2bf3.png)
 ---
 ![image](https://user-images.githubusercontent.com/117754219/216980435-a6d5e3d8-7c52-4489-9ff5-ce43cac89a31.png)
+---
+![image](https://user-images.githubusercontent.com/117754219/216981439-b0de48e4-37de-42c0-a8e0-76fce71accde.png)
+
 
 
 JTextField para recepcion del nombre de la marca:
@@ -39,7 +42,9 @@ JTextArea para impresion de resultados:
 
 
 JButton para un boton llamado calcular:
-![image](https://user-images.githubusercontent.com/117754219/216980849-b91db4fb-69e9-4b5e-b5ad-141b2d845835.png)
+
+![image](https://user-images.githubusercontent.com/117754219/216981298-9e32226f-c2f4-4ccd-af6b-f29414bd9383.png)
+
 --
 ![image](https://user-images.githubusercontent.com/117754219/216980916-1f7f077f-f0d2-4d87-aa24-9680b9ec7b8f.png)
 
