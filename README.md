@@ -1,4 +1,4 @@
-# conversionTallas
+# Conversion de Tallas
 ![image](https://user-images.githubusercontent.com/117754219/216830367-c07568b0-ea9e-44c8-9f40-99fc7a91034a.png)
 
 # Componentes que se utilizaron:
@@ -43,9 +43,9 @@ JTextArea para impresion de resultados:
 
 JButton para un boton llamado calcular:
 
-![image](https://user-images.githubusercontent.com/117754219/216981298-9e32226f-c2f4-4ccd-af6b-f29414bd9383.png)
+![image](https://user-images.githubusercontent.com/117754219/216981684-501944fe-628f-4c76-80e8-d6de3114a96b.png)
 
---
+---
 ![image](https://user-images.githubusercontent.com/117754219/216980916-1f7f077f-f0d2-4d87-aa24-9680b9ec7b8f.png)
 
 
