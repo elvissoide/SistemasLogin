@@ -1,3 +1,7 @@
+package vista;
+
+import modelo.DatosCompartidos;
+
 import javax.swing.*;
 import javax.swing.text.AbstractDocument;
 import javax.swing.text.AttributeSet;
@@ -7,7 +11,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Arrays;
 
-public class shoesConverter  extends JFrame {
+public class VistaConversion extends JFrame {
 
     private JPanel panel1;
 
@@ -21,10 +25,14 @@ public class shoesConverter  extends JFrame {
     private JLabel JTalla;
     private JTextArea txtAreaMensaje;
     private JLabel JMarca;
+    private JButton regresarButton;
+    private DatosCompartidos dc;
 
-    public shoesConverter(){
-
+    public VistaConversion(DatosCompartidos dc){
+        this.dc = dc;
         setContentPane(panel1);
+        setSize(300,300);
+        setLocation(600,250);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setTitle("Convertidor de Tallas");
         setResizable(false);
@@ -60,12 +68,19 @@ public class shoesConverter  extends JFrame {
             public void actionPerformed(ActionEvent e) {
                  String nameShoe = txtName.getText();
                  Object Size = SpSize.getValue();
-                String modelo = (String) comboBoxModelo.getSelectedItem();
-                double tallaUSA = converterTOUSASize(String.valueOf(Size));
-               txtAreaMensaje.setText("El zapato:  "+nameShoe+"\n"
-                       +"Es un modelo:  "+modelo+"\n"
-               +"Su talla en EEUU es:  "+tallaUSA);
-               txtAreaMensaje.setLineWrap(true);
+                 String modelo = (String) comboBoxModelo.getSelectedItem();
+                 double tallaUSA = converterTOUSASize(String.valueOf(Size));
+                 txtAreaMensaje.setText("El zapato:  "+nameShoe+"\n" +"Es un modelo:  "+modelo+"\n"
+                         +"Su talla en EEUU es:  "+tallaUSA);
+                 txtAreaMensaje.setLineWrap(true);
+            }
+        });
+        regresarButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                VistaOpciones vo = new VistaOpciones(dc);
+                vo.setVisible(true);
+                dispose();
             }
         });
     }
@@ -84,12 +99,13 @@ public class shoesConverter  extends JFrame {
         return tallaUSA;
     }
 
-
+    /*
     public static void main(String[] args) {
-        JFrame frame = new shoesConverter();
+        JFrame frame = new VistaConversion();
         frame.setSize(500,400);
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);
     }
+     */
 
 }
