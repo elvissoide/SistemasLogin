@@ -1,4 +1,4 @@
-# Integrantes: Elvis Guanoluisa y Wilson Guayanay
+# Integrante: Elvis Guanoluisa
 ## Enlace del video: https://youtu.be/pHwoy0vsnK0
 IMPORTANTE: Para emplear el sistema crud con una base de datos local, se debe cambiar los campos de usuario y contraseña. Se proporciona el script para crear la base de datos.
 
